@@ -540,37 +540,69 @@ h2 {
 }
 
 .experience-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.experience-item:hover {
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
 .experience-item.show {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.experience-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 0 4px 4px 0;
 }
 
 .experience-item h3 {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-    color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
-.time, .role {
-    font-size: 1rem;
-    color: #555;
+.time {
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.role {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 12px;
 }
 
 .description {
-    font-size: 0.9rem;
-    color: #666;
-    margin-top: 10px;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
 }
+
+.experience-item:hover .description {
+  color: #444;
+}
+
 
 @media (max-width: 1024px) {
     .experience-container {
