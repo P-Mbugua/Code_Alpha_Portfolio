@@ -533,191 +533,88 @@
 
 
 
-/* Skills Section */
+
+
+  /* Skills section */
 .skills-section {
-  text-align: center;
-  padding: 40px 20px;
-  background: var(--background);
-}
-
-.skills-section h1 {
-  font-size: 2rem;
-  font-weight: bolder;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-.skills-section h2 {
-  font-size: 2rem;
-  margin: 30px 0 15px;
-  color: #555;
-}
-
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  justify-content: center;
-  padding: 20px;
-}
-
-.skill-card {
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.skill-card:hover {
-  transform: translateY(-1px);
-}
-
-.progress-container {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  margin: 0 auto 15px;
-}
-
-.progress-ring {
-  transform: rotate(-90deg);
-}
-
-.ring-bg {
-  fill: none;
-  stroke: #ddd;
-  stroke-width: 8;
-}
-
-.ring-progress {
-  fill: none;
-  stroke: #38bdf8;
-  stroke-width: 8;
-  stroke-dasharray: 282.74;
-  stroke-dashoffset: 282.74;
-  transition: stroke-dashoffset 0.6s linear;
-}
-
-.progress-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
-}
-
-.skill-card h3 {
-  font-size: 1rem;
-  color: #333;
-}
-
-/* Responsive Design */
-@media (max-width: 1024px) {
+    text-align: center;
+    padding: 40px 20px;
+    background: var(--background);
+  }
+  
   .skills-section h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
   }
-
+  
   .skills-section h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    margin: 30px 0 15px;
+    color: #555;
   }
-
+  
   .skills-container {
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
   }
-
+  
   .skill-card {
-    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
   }
-
+  
+  .skill-card:hover {
+    transform: translateY(-1px);
+  }
+  
   .progress-container {
-    width: 90px;
-    height: 90px;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
   }
-
+  
+  .progress-ring {
+    transform: rotate(-90deg);
+  }
+  
+  .ring-bg {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 8;
+  }
+  
+  .ring-progress {
+    fill: none;
+    stroke: #38bdf8;
+    stroke-width: 8;
+    stroke-dasharray: 282.74;
+    stroke-dashoffset: 282.74;
+    transition: stroke-dashoffset 0.6s linear;
+  }
+  
   .progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .skill-card h3 {
     font-size: 1rem;
+    color: #333;
   }
-
-  .skill-card h3 {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .skills-section {
-    padding: 30px 15px;
-  }
-
-  .skills-section h1 {
-    font-size: 1.6rem;
-  }
-
-  .skills-section h2 {
-    font-size: 1.6rem;
-  }
-
-  .skills-container {
-    gap: 12px;
-  }
-
-  .skill-card {
-    padding: 12px;
-  }
-
-  .progress-container {
-    width: 80px;
-    height: 80px;
-  }
-
-  .progress-text {
-    font-size: 0.9rem;
-  }
-
-  .skill-card h3 {
-    font-size: 0.85rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .skills-section {
-    padding: 20px 10px;
-  }
-
-  .skills-section h1 {
-    font-size: 1.4rem;
-  }
-
-  .skills-section h2 {
-    font-size: 1.4rem;
-  }
-
-  .skills-container {
-    gap: 10px;
-  }
-
-  .skill-card {
-    padding: 10px;
-  }
-
-  .progress-container {
-    width: 70px;
-    height: 70px;
-  }
-
-  .progress-text {
-    
-    font-size: 0.8rem;
-  }
-
-  .skill-card h3 {
-    margin-top: 1rem;
-    font-size: 0.8rem;
-  }
-}
 
 
 
